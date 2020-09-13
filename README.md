@@ -1,5 +1,5 @@
 # dwm
 # Patches
 * Actualfullscreen
-* Swallow
+* Hide vacant tags
 * Systray
