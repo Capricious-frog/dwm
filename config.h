@@ -76,10 +76,11 @@ static const char *playerPrevious[] = {"playerctl", "previous", NULL};
 static const char *brightnessUp[] = {"light", "-A", "10", NULL};
 static const char *brightnessDown[] = {"light", "-U", "10", NULL};
 static const char *screenshot[] = {"cd", "~/Pictures/Screenshots", "&&", "scrot", "&&", "dunstify" "'Screenshot Taken'", NULL};
+static const char *screenLock[] = {"betterlockscreen", "-l"};
 
 static Key keys[] = {
 	/* modifier                     key                         function                argument */
-	{ MODKEY,                       XK_d,                       spawn,                  {.v = dmenucmd } },
+	{ MODKEY,                       XK_d,                       spawn,                  {.v = roficmd } },
 	{ MODKEY,                       XK_Return,                  spawn,                  {.v = termcmd } },
 	{ MODKEY,                       XK_b,                       togglebar,              {0} },
 	{ MODKEY,                       XK_j,                       focusstack,             {.i = +1 } },
