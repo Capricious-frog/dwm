@@ -1,2 +1,5 @@
 # dwm
-Julortiz's build of dwm
+# Patches
+* Actualfullscreen
+* Swallow
+* Systray
