@@ -46,3 +46,16 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+
+
+Patches
+-------------
+This version of dwm contains patches. It currently has these applied:
+
+* Actualfulscreen
+* Center
+* Hide vacant tags
+* Noborderfloatingfix
+* Swallow
+* Systray
+
