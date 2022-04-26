@@ -103,7 +103,7 @@ static const char *playerNext[] = { "playerctl", "next", NULL };
 static const char *playerPrevious[] = { "playerctl", "previous", NULL };
 static const char *brightnessUp[] = { "light", "-A", "10", NULL };
 static const char *brightnessDown[] = { "light", "-U", "10", NULL };
-//static const char *screenshot[] = { "escrotum", "~/Pictures/Screenshots/%Y-%m-%d-%H%M%S.png", NULL };
+static const char *screenshot[] = { "escrotum", "-e", "notify-send Screenshot 'Screenshot taken'", "~/Pictures/Screenshots/%Y-%m-%d-%H%M%S.png", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        			function        argument */
@@ -133,7 +133,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, 			focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  			tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, 			tagmon,         {.i = +1 } },
-	//{ 0,                            XK_Print,			spawn,          {.v = screenshot } },
+	{ 0,                            XK_Print,			spawn,          {.v = screenshot } },
 	{ 0,                            XF86XK_AudioRaiseVolume,        spawn,          {.v = volUp } },
 	{ 0,                            XF86XK_AudioLowerVolume,        spawn,          {.v = volDown } },
 	{ 0,                            XF86XK_AudioMute,               spawn,          {.v = mute } },
